@@ -1,0 +1,88 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Music, CalendarDays, Phone, AlertCircle } from "lucide-react";
+import { motion } from "framer-motion";
+
+export default function DJDanielSite() {
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-gray-800 text-white p-6">
+      <header className="text-center mb-10 text-white">
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-5xl font-extrabold mb-4"
+        >
+          JA SAM NAJBOLJI DJ U ASKELONU BRE 🔥
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          className="text-xl italic text-white"
+        >
+          נENE JA SAM ITVOR • תקליטן לסמחות • DJ Baraba mi duguje struju 😭 • BRACE NECE DA MI SE UCITA
+        </motion.p>
+      </header>
+
+      <section className="max-w-4xl mx-auto mb-12 text-white">
+        <Card className="bg-gray-900 border border-pink-700">
+          <CardContent className="p-6 text-white">
+            <AlertCircle className="w-10 h-10 mb-3 text-red-400" />
+            <h2 className="text-3xl font-bold mb-3">DANIJEL VRISTI AHAHAHAHA 😭</h2>
+            <p className="text-lg leading-relaxed">
+              JA SAM NAJBOLJI DJ U ASKELONU BRE. I'm Daniel Latsinov, Cerial, born July 22, 2008 — gamer, DJ, SMP Sales rat 😭
+              פולני גאה מאשקלון, ושואל את אלוהים למה אני עדיין פה. I run Minecraft servers Unhack & Faved, I'm built like TNT and sound like redstone repeater kad pritisneš space 😭
+              Radim na eventima, svadbama, bar micvama i žurkama kod Karakondžule. Cekaj ne izlazi mi 😭
+              Internet polupan, ali vibes su FULL UKLETO 🔊 AHAHAHAHA POJAVILA SE KARAKONDZULA
+              Bio sam i u UKLETOJ FABRICI CIGLI — zvuk tamo odzvanja kao kad DJ Baraba padne niz stepenice 😭
+              JA SAM NAJBOLJI DJ U ASKELONU BRE
+            </p>
+          </CardContent>
+        </Card>
+      </section>
+
+      <main className="grid grid-cols-1 md:grid-cols-3 gap-6 text-white">
+        <Card className="bg-gray-900 border border-gray-700">
+          <CardContent className="p-6 text-white">
+            <Music className="w-8 h-8 mb-2 text-purple-400" />
+            <h2 className="text-2xl font-semibold mb-2">JA SAM NAJBOLJI DJ U ASKELONU BRE 🎶</h2>
+            <p>
+              I drop Balkan trap, cursed techno i קצת מוזיקה חסידית kad se DJ Baraba ne pojavi 😭 Ne nego sporo mi se ucitavaju poruke.
+              Mesi je rekao da sam opet oborio sistem 😭 I REKAO JE SAD MORAM DA ZOVEM KRAGUJEVAC 😭😭😭
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-gray-900 border border-gray-700">
+          <CardContent className="p-6 text-white">
+            <CalendarDays className="w-8 h-8 mb-2 text-green-400" />
+            <h2 className="text-2xl font-semibold mb-2">Event Madness 📅</h2>
+            <p>
+              בר מצוות? רייבים? Svuda me ima — kad god ne padne server 😭
+              Bio sam na 34 svadbe, 5 ukletih hangara, 1 DoxxBet LAN turniru 😭
+              TAMAN MI JE TREBALO DA OVO NAPRAVIM 😭 UKLETA FABRIKA CIGLI ME I DALJE TRAŽI 😭
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-gray-900 border border-gray-700">
+          <CardContent className="p-6 text-white">
+            <Phone className="w-8 h-8 mb-2 text-blue-400" />
+            <h2 className="text-2xl font-semibold mb-2">Kontaktiraj DANIJELA 📞</h2>
+            <p>
+              לא יודע למה האתר נשבר 😭 Al’ ako klikneš ovde možda proradi. Ako ne — dolazi DJ Baraba.
+              MENI SE NE VISI 😭 NI MENI TO GOVORIM 😭
+              Ne znam šta ti je tačno rekao 😭 AHAHAHAHAH DOSTAAA
+            </p>
+            <Button className="mt-4 bg-pink-600 hover:bg-pink-700 text-white">ZOVI BRACE SAD</Button>
+          </CardContent>
+        </Card>
+      </main>
+
+      <footer className="text-center mt-16 text-sm text-gray-400 text-white">
+        © 2025 DJ Daniel Latsinov — JA SAM NAJBOLJI DJ U ASKELONU BRE | אם זה נפל, תנסה לרפרש 😭 | DANIJEL VRISTI 😭 | UKLETA FABRIKA CIGLI TE GLEDA 😭
+      </footer>
+    </div>
+  );
+}
