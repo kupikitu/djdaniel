@@ -1,88 +1,83 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Music, CalendarDays, Phone, AlertCircle } from "lucide-react";
-import { motion } from "framer-motion";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DJ Daniel - Askelon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.145.0/dist/lucide.min.js"></script>
+  <style>
+    .motion-fade-in {
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: fadeIn 0.8s forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-black via-gray-900 to-gray-800 text-white p-6">
 
-export default function DJDanielSite() {
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-gray-800 text-white p-6">
-      <header className="text-center mb-10 text-white">
-        <motion.h1
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-5xl font-extrabold mb-4"
-        >
-          JA SAM NAJBOLJI DJ U ASKELONU BRE 🔥
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-          className="text-xl italic text-white"
-        >
-          נENE JA SAM ITVOR • תקליטן לסמחות • DJ Baraba mi duguje struju 😭 • BRACE NECE DA MI SE UCITA
-        </motion.p>
-      </header>
+  <header class="text-center mb-10 text-white">
+    <h1 class="text-5xl font-extrabold mb-4 motion-fade-in">DJ Daniel Latsinov DJ Services Ashkelon</h1>
+    <p class="text-xl italic text-white motion-fade-in" style="animation-delay: 0.5s;">JA SAM NAJBOLJI DJ U ASKELONU BRE 🔥</p>
+    <p class="text-xl italic text-white motion-fade-in" style="animation-delay: 0.5s;">נNENE JA SAM ITVOR • תקליטן לסמחות • DJ Baraba mi duguje struju 😭 • BRACE NECE DA MI SE UCITA</p>
+  </header>
 
-      <section className="max-w-4xl mx-auto mb-12 text-white">
-        <Card className="bg-gray-900 border border-pink-700">
-          <CardContent className="p-6 text-white">
-            <AlertCircle className="w-10 h-10 mb-3 text-red-400" />
-            <h2 className="text-3xl font-bold mb-3">DANIJEL VRISTI AHAHAHAHA 😭</h2>
-            <p className="text-lg leading-relaxed">
-              JA SAM NAJBOLJI DJ U ASKELONU BRE. I'm Daniel Latsinov, Cerial, born July 22, 2008 — gamer, DJ, SMP Sales rat 😭
-              פולני גאה מאשקלון, ושואל את אלוהים למה אני עדיין פה. I run Minecraft servers Unhack & Faved, I'm built like TNT and sound like redstone repeater kad pritisneš space 😭
-              Radim na eventima, svadbama, bar micvama i žurkama kod Karakondžule. Cekaj ne izlazi mi 😭
-              Internet polupan, ali vibes su FULL UKLETO 🔊 AHAHAHAHA POJAVILA SE KARAKONDZULA
-              Bio sam i u UKLETOJ FABRICI CIGLI — zvuk tamo odzvanja kao kad DJ Baraba padne niz stepenice 😭
-              JA SAM NAJBOLJI DJ U ASKELONU BRE
-            </p>
-          </CardContent>
-        </Card>
-      </section>
-
-      <main className="grid grid-cols-1 md:grid-cols-3 gap-6 text-white">
-        <Card className="bg-gray-900 border border-gray-700">
-          <CardContent className="p-6 text-white">
-            <Music className="w-8 h-8 mb-2 text-purple-400" />
-            <h2 className="text-2xl font-semibold mb-2">JA SAM NAJBOLJI DJ U ASKELONU BRE 🎶</h2>
-            <p>
-              I drop Balkan trap, cursed techno i קצת מוזיקה חסידית kad se DJ Baraba ne pojavi 😭 Ne nego sporo mi se ucitavaju poruke.
-              Mesi je rekao da sam opet oborio sistem 😭 I REKAO JE SAD MORAM DA ZOVEM KRAGUJEVAC 😭😭😭
-            </p>
-          </CardContent>
-        </Card>
-
-        <Card className="bg-gray-900 border border-gray-700">
-          <CardContent className="p-6 text-white">
-            <CalendarDays className="w-8 h-8 mb-2 text-green-400" />
-            <h2 className="text-2xl font-semibold mb-2">Event Madness 📅</h2>
-            <p>
-              בר מצוות? רייבים? Svuda me ima — kad god ne padne server 😭
-              Bio sam na 34 svadbe, 5 ukletih hangara, 1 DoxxBet LAN turniru 😭
-              TAMAN MI JE TREBALO DA OVO NAPRAVIM 😭 UKLETA FABRIKA CIGLI ME I DALJE TRAŽI 😭
-            </p>
-          </CardContent>
-        </Card>
-
-        <Card className="bg-gray-900 border border-gray-700">
-          <CardContent className="p-6 text-white">
-            <Phone className="w-8 h-8 mb-2 text-blue-400" />
-            <h2 className="text-2xl font-semibold mb-2">Kontaktiraj DANIJELA 📞</h2>
-            <p>
-              לא יודע למה האתר נשבר 😭 Al’ ako klikneš ovde možda proradi. Ako ne — dolazi DJ Baraba.
-              MENI SE NE VISI 😭 NI MENI TO GOVORIM 😭
-              Ne znam šta ti je tačno rekao 😭 AHAHAHAHAH DOSTAAA
-            </p>
-            <Button className="mt-4 bg-pink-600 hover:bg-pink-700 text-white">ZOVI BRACE SAD</Button>
-          </CardContent>
-        </Card>
-      </main>
-
-      <footer className="text-center mt-16 text-sm text-gray-400 text-white">
-        © 2025 DJ Daniel Latsinov — JA SAM NAJBOLJI DJ U ASKELONU BRE | אם זה נפל, תנסה לרפרש 😭 | DANIJEL VRISTI 😭 | UKLETA FABRIKA CIGLI TE GLEDA 😭
-      </footer>
+  <section class="max-w-4xl mx-auto mb-12 text-white">
+    <div class="bg-gray-900 border border-pink-700 p-6">
+      <div class="text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-exclamation-circle mb-3 text-red-400" viewBox="0 0 16 16">
+          <path d="M7.002 6.002a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-.004a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5z" />
+          <path d="M8 14a6 6 0 1 0 0-12 6 6 0 0 0 0 12zm0 1a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
+        </svg>
+        <h2 class="text-3xl font-bold mb-3 motion-fade-in" style="animation-delay: 1s;">DANIJEL VRISTI AHAHAHAHA 😭</h2>
+        <p class="text-lg leading-relaxed motion-fade-in" style="animation-delay: 1.5s;">
+          JA SAM NAJBOLJI DJ U ASKELONU BRE. I'm Daniel Latsinov, Cerial, born July 22, 2008 — gamer, DJ, SMP Sales rat 😭
+          פולני גאה מאשקלון, ושואל את אלוהים למה אני עדיין פה. I run Minecraft servers Unhack & Faved, I'm built like TNT and sound like redstone repeater kad pritisneš space 😭
+          Radim na eventima, svadbama, bar micvama i žurkama kod Karakondžule. Cekaj ne izlazi mi 😭
+          Internet polupan, ali vibes su FULL UKLETO 🔊 AHAHAHAHA POJAVILA SE KARAKONDZULA
+          Bio sam i u UKLETOJ FABRICI CIGLI — zvuk tamo odzvanja kao kad DJ Baraba padne niz stepenice 😭
+          JA SAM NAJBOLJI DJ U ASKELONU BRE
+        </p>
+      </div>
     </div>
-  );
-}
+  </section>
+
+  <main class="grid grid-cols-1 md:grid-cols-3 gap-6 text-white">
+    <div class="bg-gray-900 border border-gray-700 p-6">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-music-note-beamed mb-2 text-purple-400" viewBox="0 0 16 16">
+        <path d="M12 1v12.5a2.5 2.5 0 0 1-2-2.45V6.5a1 1 0 0 0-.615-.915l-4 2a1 1 0 0 0 0 1.83l4 2a1 1 0 0 0 1.615-.83V7.5h3V1h-3z" />
+      </svg>
+      <h2 class="text-2xl font-semibold mb-2">JA SAM NAJBOLJI DJ U ASKELONU BRE 🎶</h2>
+      <p>I drop Balkan trap, cursed techno i קצת מוזיקה חסידית kad se DJ Baraba ne pojavi 😭</p>
+    </div>
+
+    <div class="bg-gray-900 border border-gray-700 p-6">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-calendar-event mb-2 text-green-400" viewBox="0 0 16 16">
+        <path d="M3 0a1 1 0 0 1 1 1v1h8V1a1 1 0 0 1 2 0v1h1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h1V1a1 1 0 0 1 1-1zm0 3V1h1v2H3zm8 0V1h1v2h-1z" />
+      </svg>
+      <h2 class="text-2xl font-semibold mb-2">Event Madness 📅</h2>
+      <p>בר מצוות? רייבים? Svuda me ima — kad god ne padne server 😭</p>
+    </div>
+
+    <div class="bg-gray-900 border border-gray-700 p-6">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-telephone mb-2 text-blue-400" viewBox="0 0 16 16">
+        <path d="M11.744 10.717a1 1 0 0 1 1.414-.002l2 2a1 1 0 0 1-.002 1.415l-2 2a1 1 0 0 1-1.415-.002L9.866 12.67a1 1 0 0 1-.002-1.415l2-2a1 1 0 0 1 1.414-.002zM8 0a7 7 0 0 1 7 7v3.196l-1 .825V7a6 6 0 0 0-12 0v6a6 6 0 0 0 12 0v-3.021l1 .825V7a7 7 0 0 1-7-7z" />
+      </svg>
+      <h2 class="text-2xl font-semibold mb-2">Kontaktiraj DANIJELA 📞</h2>
+      <p>לא יודע למה האתר נשבר 😭 Al’ ako klikneš ovde možda proradi. Ako ne — dolazi DJ Baraba.</p>
+      <button class="mt-4 bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded">ZOVI BRACE SAD</button>
+    </div>
+  </main>
+
+  <footer class="text-center mt-16 text-sm text-gray-400 text-white">
+    © 2025 DJ Daniel Latsinov — JA SAM NAJBOLJI DJ U ASKELONU BRE | אם זה נפל, תנסה לרפרש 😭 | DANIJEL VRISTI 😭 | UKLETA FABRIKA CIGLI TE GLEDA 😭
+  </footer>
+
+</body>
+</html>
